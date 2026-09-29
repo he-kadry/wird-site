@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wird — Support</title>
+<meta name="description" content="Support for Wird: Daily Quran, a gentle app for reading one page of the Quran a day.">
+<style>
+:root { --bg: #faf7f0; --fg: #14231f; --soft: #5e716b; --line: #e4ddce; --accent: #0f6b57; --gold: #a8781a; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0e1513; --fg: #e8f0ed; --soft: #93a8a2; --line: #26342f; --accent: #3fb495; --gold: #dcae4e; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 18px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 6px; }
+.mark { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 44px; line-height: 1; color: var(--accent); }
+h1 { font-size: 28px; margin: 0; }
+h2 { font-size: 18px; margin: 0 0 8px; }
+p { margin: 0; }
+.soft { color: var(--soft); }
+section { display: grid; gap: 10px; }
+dl { margin: 0; display: grid; gap: 14px; }
+dt { font-weight: 600; }
+dd { margin: 2px 0 0; color: var(--soft); }
+a { color: var(--accent); }
+.ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 17px; line-height: 1.9; border-top: 1px solid var(--line); padding-top: 32px; }
+footer { color: var(--soft); font-size: 13px; border-top: 1px solid var(--line); padding-top: 20px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="mark" lang="ar">وِرْد</div>
+    <h1>Wird: Daily Quran</h1>
+    <p class="soft">A gentle way to keep a daily portion of the Quran: one page a day in the Madinah mushaf, with its words.</p>
+  </header>
+
+  <section>
+    <h2>Get help</h2>
+    <p>Questions, a word or page that looks wrong, or an idea: <a href="https://github.com/he-kadry/wird-site/issues">open an issue here</a>. Testers can also send feedback from inside TestFlight by taking a screenshot in the app.</p>
+    <p><a href="privacy.html">Privacy policy</a> · Wird collects no data. Your reading stays on your iPhone.</p>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <dl>
+      <div><dt>I missed a day. Is my streak gone?</dt>
+        <dd>Not necessarily. Freezes cover missed days automatically, and after a missed day the app offers (never requires) a few extra pages to catch up.</dd></div>
+      <div><dt>Can I listen without internet?</dt>
+        <dd>Yes. Your next week of reading is saved automatically on Wi-Fi, and you can download any juz from Mushaf → Offline audio.</dd></div>
+      <div><dt>How do I change the language, reciter or reminder time?</dt>
+        <dd>Tap ⋯ on the Today screen. Language, appearance, reciter, pages per day and reminders are all there.</dd></div>
+      <div><dt>Where does the text come from?</dt>
+        <dd>The Quran text is from Tanzil, checked word by word; the page layout follows the 604-page Madinah mushaf; tafsir, word meanings and roots come from QUL by Tarteel; recitation audio from Islamic Network.</dd></div>
+    </dl>
+  </section>
+
+  <section class="ar" dir="rtl" lang="ar">
+    <h2>الدعم</h2>
+    <p>وِرْد: القرآن كل يوم — طريقة لطيفة للمداومة على وِرد يومي: صفحة كل يوم في مصحف المدينة، مع معاني كلماتها.</p>
+    <p>للأسئلة أو للإبلاغ عن كلمة أو صفحة تبدو خطأ أو لاقتراح فكرة: <a href="https://github.com/he-kadry/wird-site/issues">اكتب لنا هنا</a>.</p>
+    <p><a href="privacy.html">سياسة الخصوصية</a> · لا يجمع وِرْد أي بيانات، وتبقى قراءتك على جهازك.</p>
+  </section>
+
+  <footer>© 2026 Hossameldin Abdelrahman</footer>
+</main>
+</body>
+</html>
