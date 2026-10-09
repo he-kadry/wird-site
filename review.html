@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Wird — Review</title>
+<style>
+:root { --bg: #faf7f0; --fg: #14231f; --soft: #5e716b; --line: #e4ddce; --accent: #0f6b57; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0e1513; --fg: #e8f0ed; --soft: #93a8a2; --line: #26342f; --accent: #3fb495; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, system-ui, sans-serif; }
+main { max-width: 560px; margin: 0 auto; padding: 40px 18px 64px; display: grid; gap: 32px; }
+.mark { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 44px; line-height: 1; color: var(--accent); }
+h1 { font-size: 26px; margin: 6px 0 0; }
+p, ol { margin: 0; }
+ol { padding-inline-start: 22px; display: grid; gap: 8px; }
+.soft { color: var(--soft); }
+.btn { display: block; text-align: center; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; font-size: 18px; padding: 16px; border-radius: 14px; }
+.small { font-size: 14px; }
+a { color: var(--accent); }
+section { display: grid; gap: 14px; }
+.ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 17px; line-height: 1.9; border-top: 1px solid var(--line); padding-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <section>
+    <div class="mark" lang="ar">وِرْد</div>
+    <h1>Review the journeys</h1>
+    <p class="soft">For the reviewers of the Seerah and Places cards. Open this page on the iPhone where Wird is installed from TestFlight.</p>
+    <ol>
+      <li>Install Wird from your TestFlight invitation, and open it once.</li>
+      <li>Tap the button below, then choose <b>Open</b>.</li>
+      <li>A <b>Review</b> tab appears. Each card has <b>Comment</b> (sends us an email) and <b>Mark reviewed</b>.</li>
+    </ol>
+    <a class="btn" href="wird://review">Open the Review tab</a>
+    <p class="soft small">The tab works only in the TestFlight version. To hide it again, use the button in the tab, or <a href="wird://review/off">hide the Review tab</a>.</p>
+  </section>
+
+  <section class="ar" dir="rtl" lang="ar">
+    <h1>مراجعة الرحلات</h1>
+    <p class="soft">لمراجعي بطاقات السيرة والأماكن. افتح هذه الصفحة على الآيفون المثبَّت عليه تطبيق وِرْد من TestFlight.</p>
+    <ol>
+      <li>ثبّت وِرْد من دعوة TestFlight وافتحه مرة واحدة.</li>
+      <li>اضغط الزر أدناه، ثم اختر <b>فتح</b>.</li>
+      <li>يظهر تبويب <b>المراجعة</b>، وفي كل بطاقة زر <b>تعليق</b> (يرسل إلينا بريدًا) وزر <b>تحديد كمُراجَعة</b>.</li>
+    </ol>
+    <a class="btn" href="wird://review">افتح تبويب المراجعة</a>
+    <p class="soft small">لا يعمل التبويب إلا في نسخة TestFlight. لإخفائه استخدم الزر داخل التبويب، أو <a href="wird://review/off">أخفِ تبويب المراجعة</a>.</p>
+  </section>
+</main>
+</body>
+</html>
