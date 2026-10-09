@@ -1,6 +1,6 @@
 # Wird — support and privacy
 
-The public support page and privacy policy for the iPhone app **Wird: Daily Quran**.
+The public support page and privacy policy for the iPhone app **Wird: Daily Quran Habit**.
 
 - Support: https://he-kadry.github.io/wird-site/
 - Privacy policy: https://he-kadry.github.io/wird-site/privacy.html
