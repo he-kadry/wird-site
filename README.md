@@ -1,11 +1,19 @@
 # Wird — support and privacy
 
-The public support page and privacy policy for the iPhone app **Wird: Daily Quran Habit**.
+The public website for the app **Wird: Daily Quran Habit**, in English and Arabic.
 
-- Support: https://he-kadry.github.io/wird-site/
-- Privacy policy: https://he-kadry.github.io/wird-site/privacy.html
+- Home + support + FAQ: https://he-kadry.github.io/wird-site/ (Arabic: /ar/)
+- Guide, screen by screen: /guide.html (Arabic: /ar/guide.html)
+- Privacy policy: /privacy.html
+- Reviewer link page: /review.html (not indexed)
 
+All pages share `style.css` (bump `?v=` in the links after changing it). Screenshots are in `img/`.
 This repository holds only these pages; the app source is not here.
+
+## On launch day
+
+- Replace the "Coming soon" App Store button in `index.html` and `ar/index.html` with Apple's official badge (Arabic badge on the Arabic page), linked to the App Store page.
+- Reviews: add only real quotes from real readers, with their permission (template in a comment in each page).
 
 ## Switching a reciter off (config.json)
 

@@ -1,66 +1,187 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wird — Support</title>
-<meta name="description" content="Support for Wird: Daily Quran Habit, a gentle app for reading one page of the Quran a day.">
-<style>
-:root { --bg: #faf7f0; --fg: #14231f; --soft: #5e716b; --line: #e4ddce; --accent: #0f6b57; --gold: #a8781a; }
-@media (prefers-color-scheme: dark) { :root { --bg: #0e1513; --fg: #e8f0ed; --soft: #93a8a2; --line: #26342f; --accent: #3fb495; --gold: #dcae4e; } }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, system-ui, sans-serif; }
-main { max-width: 680px; margin: 0 auto; padding: 40px 18px 64px; display: grid; gap: 40px; }
-header { display: grid; gap: 6px; }
-.mark { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 44px; line-height: 1; color: var(--accent); }
-h1 { font-size: 28px; margin: 0; }
-h2 { font-size: 18px; margin: 0 0 8px; }
-p { margin: 0; }
-.soft { color: var(--soft); }
-section { display: grid; gap: 10px; }
-dl { margin: 0; display: grid; gap: 14px; }
-dt { font-weight: 600; }
-dd { margin: 2px 0 0; color: var(--soft); }
-a { color: var(--accent); }
-.ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 17px; line-height: 1.9; border-top: 1px solid var(--line); padding-top: 32px; }
-footer { color: var(--soft); font-size: 13px; border-top: 1px solid var(--line); padding-top: 20px; }
-</style>
+<title>Wird: Daily Quran Habit</title>
+<meta name="description" content="Read one page of the Quran a day in the Madinah mushaf. Learn its words first, check them after, and keep a gentle chain of days. Free, no ads, no tracking.">
+<link rel="alternate" hreflang="en" href="https://he-kadry.github.io/wird-site/">
+<link rel="alternate" hreflang="ar" href="https://he-kadry.github.io/wird-site/ar/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f6b57'/%3E%3Cg fill='%23dcae4e'%3E%3Crect x='6' y='6' width='12' height='12'/%3E%3Crect x='6' y='6' width='12' height='12' transform='rotate(45 12 12)'/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:title" content="Wird: Daily Quran Habit">
+<meta property="og:description" content="One page of the Quran a day, with meaning.">
+<meta property="og:image" content="https://he-kadry.github.io/wird-site/img/en-1.jpg">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-<main>
-  <header>
-    <div class="mark" lang="ar">وِرْد</div>
-    <h1>Wird: Daily Quran Habit</h1>
-    <p class="soft">A gentle way to keep a daily portion of the Quran: one page a day in the Madinah mushaf, with its words.</p>
-  </header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><g fill="currentColor"><rect x="5" y="5" width="14" height="14"/><rect x="5" y="5" width="14" height="14" transform="rotate(45 12 12)"/></g></symbol>
+</svg>
 
-  <section>
-    <h2>Get help</h2>
-    <p>Questions, a word or page that looks wrong, or an idea: email <a href="mailto:wird.app.support@gmail.com">wird.app.support@gmail.com</a>. Testers can also send feedback from inside TestFlight by taking a screenshot in the app.</p>
-    <p><a href="privacy.html">Privacy policy</a> · Wird collects no data. Your reading stays on your iPhone or iPad.</p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><svg class="star"><use href="#star"/></svg><span class="word" lang="ar">وِرْد</span></a>
+    <nav aria-label="Site">
+      <a href="guide.html">How to use</a>
+      <a class="opt" href="#ipad">iPad</a>
+      <a class="opt" href="#faq">Questions</a>
+      <a class="opt" href="#support">Support</a>
+      <a class="lang" href="ar/" lang="ar" hreflang="ar">العربية</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <h1>One page of the Quran a day, with meaning.</h1>
+      <p class="lede">Wird helps you keep a daily portion of the Quran. Meet a few words from today’s page, read it in the Madinah mushaf, then answer a few gentle questions. About seven minutes a day.</p>
+      <div class="downloads">
+        <!-- On launch: replace this with Apple's official "Download on the App Store" badge
+             (developer.apple.com/app-store/marketing/guidelines) linking to the App Store page. -->
+        <span class="btn primary" aria-disabled="true"><small>Coming soon to the</small><strong>App Store</strong></span>
+        <!-- When the Android app ships: Google's "Get it on Google Play" badge (play.google.com/intl/en_us/badges). -->
+        <span class="btn ghost" aria-disabled="true"><small>Android</small><strong>Coming later</strong></span>
+      </div>
+      <p class="note">For iPhone and iPad (iOS 17 or later). Free, with no ads and no in-app purchases.</p>
+    </div>
+    <div class="phone"><img src="img/g-en-today.jpg" width="414" height="900" alt="Wird’s Today screen: today’s wird is Al-Isra, page 293, with warm-up, read and check steps, a 12-day streak and a pearl jar."></div>
+  </div>
+</div>
+
+<main class="wrap home">
+  <section id="daily">
+    <p class="eyebrow">Each day</p>
+    <h2>Three short steps, then you’re done.</h2>
+    <div class="steps">
+      <div class="card"><h3><span class="num">1</span>Warm up</h3><p>Five words from today’s page, each with its meaning, root and transliteration.</p></div>
+      <div class="card"><h3><span class="num">2</span>Read</h3><p>The page exactly as printed in the 604-page Madinah mushaf. Tap any word for its meaning, or listen as each word lights up with the reciter.</p></div>
+      <div class="card"><h3><span class="num">3</span>Check</h3><p>A few gentle questions. A wrong answer costs nothing. Words come back for review just before you would forget them.</p></div>
+    </div>
+    <div class="shots" role="region" aria-label="Screenshots" tabindex="0">
+      <img src="img/en-1.jpg" width="440" height="956" loading="lazy" alt="A page of the Quran, every day">
+      <img src="img/en-2.jpg" width="440" height="956" loading="lazy" alt="Tap any word for its meaning">
+      <img src="img/en-3.jpg" width="440" height="956" loading="lazy" alt="Know the words before you read">
+      <img src="img/en-4.jpg" width="440" height="956" loading="lazy" alt="Gentle questions, no pressure">
+      <img src="img/en-5.jpg" width="440" height="956" loading="lazy" alt="Watch your streak grow">
+      <img src="img/en-6.jpg" width="440" height="956" loading="lazy" alt="Tafsir alongside the page">
+      <img src="img/en-7.jpg" width="440" height="956" loading="lazy" alt="Gregorian and Hijri dates side by side">
+      <img src="img/en-8.jpg" width="440" height="956" loading="lazy" alt="Explore the roots">
+    </div>
+    <p><a href="guide.html">See the full guide, screen by screen →</a></p>
   </section>
 
-  <section>
+  <section id="features">
+    <p class="eyebrow">What’s inside</p>
+    <h2>Everything for a daily wird, nothing in the way.</h2>
+    <div class="features">
+      <div class="card"><h3>Keep going</h3><ul>
+        <li>A streak that grows as a chain of days, with freezes for the days life gets in the way.</li>
+        <li>Pearls fill a jar as you read: a quiet marker of effort, not a score.</li>
+        <li>A journey through the Seerah that opens a new stop every half juz.</li>
+        <li>A celebration with a du’a when you complete a khatm.</li>
+      </ul></div>
+      <div class="card"><h3>Understand</h3><ul>
+        <li>Tap any word for its meaning, its root and how often it appears.</li>
+        <li>Tafsir beside the page: al-Muyassar in Arabic and Al-Mukhtasar in English.</li>
+        <li>Follow a root through every form and every ayah it appears in.</li>
+        <li>Search by surah, Arabic word, or English meaning.</li>
+      </ul></div>
+      <div class="card"><h3>Listen</h3><ul>
+        <li>Mahmoud Khalil al-Husary, Mishari Rashid al-Afasy or Muhammad Siddiq al-Minshawi.</li>
+        <li>Each word lights up as it is recited.</li>
+        <li>Offline: your next week is saved on Wi‑Fi, or download any juz.</li>
+        <li>Keeps playing, page after page, with the screen locked.</li>
+      </ul></div>
+      <div class="card"><h3>Your way</h3><ul>
+        <li>1 to 20 pages a day, and reminders at the times you choose.</li>
+        <li>English or Arabic, switched inside the app.</li>
+        <li>Tasbīʿ: the whole Quran every week, in its seven traditional parts.</li>
+        <li>iCloud sync between iPhone and iPad, a widget, and private family circles.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section id="ipad">
+    <p class="eyebrow">On iPad</p>
+    <h2>Turn it sideways, and the mushaf opens like a book.</h2>
+    <p class="intro">Wird runs on iPad as well as iPhone, with the same reading, streak and settings, kept in step through iCloud.</p>
+    <div class="ipad">
+      <figure><img src="img/ipad-en-spread.jpg" width="1400" height="1050" loading="lazy" alt="Wird on iPad in landscape: two mushaf pages side by side, page 293 on the right and 294 on the left"><figcaption>Landscape: two pages side by side, as in a printed mushaf.</figcaption></figure>
+      <figure><img src="img/ipad-en-portrait.jpg" width="750" height="1000" loading="lazy" alt="Wird on iPad in portrait: one full page with a word card open"><figcaption>Portrait: one large page.</figcaption></figure>
+    </div>
+    <div class="ipad-points">
+      <div class="card"><h3>Two pages in landscape</h3><p>Hold the iPad sideways and the Mushaf tab shows a full spread: the odd page on the right, the even page on the left, just like print. Swipe to turn a whole spread at a time.</p></div>
+      <div class="card"><h3>One page in portrait</h3><p>Upright, you get a single page in the shape of the printed mushaf, with larger type than on iPhone.</p></div>
+      <div class="card"><h3>Any way you hold it</h3><p>Every orientation works, and so does Split View, so Wird can sit beside your notes or another app.</p></div>
+      <div class="card"><h3>Same reading everywhere</h3><p>Start on your iPhone and finish on your iPad. Your place, streak and pearls sync through your own iCloud, with no sign-in.</p></div>
+    </div>
+  </section>
+
+  <section id="promise">
+    <p class="eyebrow">Our promises</p>
+    <h2>Built around worship, not engagement.</h2>
+    <div class="promise">
+      <div><strong>Never locked out</strong><p>No hearts, no lives, no buzzers. The Quran is never behind a paywall or a failure screen.</p></div>
+      <div><strong>No leaderboards</strong><p>Family circles show who read today and their streak, never a ranking.</p></div>
+      <div><strong>Verified text</strong><p>Every word of the Quran is checked against Tanzil’s verified text before a version ships.</p></div>
+      <div><strong>Private</strong><p>No account, no ads, no tracking. Wird collects no data at all.</p></div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <p class="eyebrow">From readers</p>
+    <h2>What people say</h2>
+    <!-- Add only real words from real readers, with their permission. One card each:
+    <div class="reviews">
+      <blockquote class="card"><p>“…”</p><cite>Name, city</cite></blockquote>
+    </div>
+    -->
+    <div class="empty">
+      <p>Wird is in testing now. Reviews from readers will appear here after launch.</p>
+      <p class="soft">Using Wird already? We’d love to hear how it’s going: <a href="mailto:wird.app.support@gmail.com?subject=My%20experience%20with%20Wird">share your experience</a>. Tell us if we may quote you, and how you’d like to be named.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <p class="eyebrow">Questions</p>
     <h2>Common questions</h2>
-    <dl>
-      <div><dt>I missed a day. Is my streak gone?</dt>
-        <dd>Not necessarily. Freezes cover missed days automatically, and after a missed day the app offers (never requires) a few extra pages to catch up.</dd></div>
-      <div><dt>Can I listen without internet?</dt>
-        <dd>Yes. Your next week of reading is saved automatically on Wi-Fi, and you can download any juz from Mushaf → Offline audio.</dd></div>
-      <div><dt>How do I change the language, reciter or reminder time?</dt>
-        <dd>Tap ⋯ on the Today screen. Language, appearance, reciter, pages per day and reminders are all there.</dd></div>
-      <div><dt>Where does the text come from?</dt>
-        <dd>The Quran text is from Tanzil, checked word by word; the page layout follows the 604-page Madinah mushaf; tafsir, word meanings (English, and Arabic from al-Muyassar fi Gharib al-Quran) and roots come from QUL by Tarteel; recitation audio from Islamic Network.</dd></div>
-    </dl>
+    <div class="faq">
+      <details><summary>Is Wird free?</summary><div class="a"><p>Yes. No ads, no subscriptions, no in-app purchases.</p></div></details>
+      <details><summary>Is there an Android version?</summary><div class="a"><p>Not yet. Wird launches on iPhone and iPad first. An Android version is planned after that; this page will say when it’s ready.</p></div></details>
+      <details><summary>Does it work on iPad?</summary><div class="a"><p>Yes. In landscape the Mushaf shows two pages side by side, like an open book; in portrait, one large page. Your reading syncs with your iPhone through iCloud. <a href="#ipad">More about iPad</a></p></div></details>
+      <details><summary>Do I need to know Arabic?</summary><div class="a"><p>No. Every warm-up word has its English meaning and its transliteration in Latin letters, any word on the page can be tapped for its meaning, and the English tafsir sits beside the page.</p></div></details>
+      <details><summary>What happens if I answer wrong?</summary><div class="a"><p>Nothing. There are no hearts or lives, and a wrong answer never stops you reading. The word simply comes back for review sooner.</p></div></details>
+      <details><summary>I missed a day. Is my streak gone?</summary><div class="a"><p>Not necessarily. Freezes cover missed days automatically. You can hold up to two, and buy more with 250 pearls each. After a missed day the app offers, never requires, a few extra pages to catch up.</p></div></details>
+      <details><summary>How much do I read each day?</summary><div class="a"><p>One page by default, about seven minutes with the warm-up and questions. Choose anywhere from 1 to 20 pages in ⋯ → Pages per day; the app shows how many days your khatm will take.</p></div></details>
+      <details><summary>Can I just read, without the questions?</summary><div class="a"><p>Yes. Turn off ⋯ → Warm-up and questions. Your streak, pearls and journey still count.</p></div></details>
+      <details><summary>Can I listen without internet?</summary><div class="a"><p>Yes. Your next week of reading is saved automatically on Wi‑Fi, and you can download any juz, or the whole Quran, from Mushaf → Offline audio.</p></div></details>
+      <details><summary>Does my reading sync between iPhone and iPad?</summary><div class="a"><p>Yes, through your own private iCloud storage. There’s no sign-in; it’s on by default (⋯ → iCloud sync).</p></div></details>
+      <details><summary>What are family circles?</summary><div class="a"><p>An invite-only group, shared through iCloud. Members see each other’s name, streak and whether they’ve read today. Nothing else is shared, and no one is ranked.</p></div></details>
+      <details><summary>How do I change the language, reciter or reminders?</summary><div class="a"><p>Tap ⋯ on the Today screen. Language, appearance, reciter, pages per day and reminders are all there.</p></div></details>
+      <details><summary>Where does the text come from?</summary><div class="a"><p>The Quran text is from <a href="https://tanzil.net">Tanzil</a>, checked word by word. The page layout follows the 604-page Madinah mushaf. Tafsir, word meanings and roots come from QUL by Tarteel, and recitation audio from Islamic Network.</p></div></details>
+      <details><summary>I found a mistake.</summary><div class="a"><p>Please tell us: email <a href="mailto:wird.app.support@gmail.com">wird.app.support@gmail.com</a> with the surah and ayah, or the page number, and what looks wrong.</p></div></details>
+    </div>
   </section>
 
-  <section class="ar" dir="rtl" lang="ar">
-    <h2>الدعم</h2>
-    <p>وِرْد: القرآن كل يوم — طريقة لطيفة للمداومة على وِرد يومي: صفحة كل يوم في مصحف المدينة، مع معاني كلماتها.</p>
-    <p>للأسئلة أو للإبلاغ عن كلمة أو صفحة تبدو خطأ أو لاقتراح فكرة: راسلنا على <a href="mailto:wird.app.support@gmail.com">wird.app.support@gmail.com</a>.</p>
-    <p><a href="privacy.html">سياسة الخصوصية</a> · لا يجمع وِرْد أي بيانات، وتبقى قراءتك على جهازك.</p>
+  <section id="support">
+    <p class="eyebrow">Support</p>
+    <h2>Get help</h2>
+    <div class="support">
+      <div class="card"><h3>Email</h3><p>Questions, a word or page that looks wrong, or an idea: <a href="mailto:wird.app.support@gmail.com">wird.app.support@gmail.com</a>.</p></div>
+      <div class="card"><h3>Privacy</h3><p>Wird collects no data. Your reading stays on your devices and in your own iCloud. <a href="privacy.html">Privacy policy</a></p></div>
+    </div>
+    <p class="sources">Quran text: <a href="https://tanzil.net">Tanzil</a> (CC BY 3.0). Script: DigitalKhatt. Page layout, word meanings (English, and Arabic from al-Muyassar fi Gharib al-Quran), roots and transliteration: QUL by Tarteel. Recitation audio: Islamic Network.</p>
   </section>
-
-  <footer>© 2026 Hossameldin Abdelrahman</footer>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Hossameldin Abdelrahman</span>
+    <a href="guide.html">How to use</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="ar/" lang="ar">العربية</a>
+  </div>
+</footer>
 </body>
 </html>
